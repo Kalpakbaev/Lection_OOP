@@ -4,7 +4,9 @@ public class Main {
         zoo.setRadio(new Radio());
         zoo.addList((new Wolf("Wolf"))).addList(new Hare("Hare"))
                 .addList(new Duck("DonaldDuck"))
-                .addList(new Bat("BatMan"));
+                .addList(new Bat("BatMan"))
+                .addList(new Shark("BabyShark"))
+                .addList(new Delphin("GURU"));
         for (var item : zoo.getListAnimal()) {
             System.out.println(item);
 
@@ -22,10 +24,15 @@ public class Main {
             System.out.printf("%s - %d", item.toString(), item.speedForFly());
         }
         System.out.println("----------");
+        for (var item: zoo.swimingSpeeds()){
+            System.out.printf("%s - %d", item.toString(), item.swimSpeed());
+        }
+        System.out.println("----------------");
         System.out.println("Winner " + zoo.winnerWolk());
         System.out.println("----------------------");
         System.out.println("Winner " + zoo.winnerFly());
-
+        System.out.println("-------------");
+        System.out.println("Winner" + zoo.winnerSwim());
     }
 
 }
