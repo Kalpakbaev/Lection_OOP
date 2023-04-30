@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface Walkable {
+public interface Walkable {
+    int speedForWalk();
 }

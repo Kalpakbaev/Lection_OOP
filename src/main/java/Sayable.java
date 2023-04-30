@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public interface Sayble {
+public interface Sayable {
+    String say();
 }
